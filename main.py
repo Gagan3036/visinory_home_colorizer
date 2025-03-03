@@ -6,6 +6,8 @@ import numpy as np
 
 MODEL = download_and_load_model()
 
+app = Flask(__name__)
+
 UPLOAD_FOLDER = r'uploaded_images'
 NUMPY_FOLDER = r'uploaded_images\numpy_files'
 RESIZED_FOLDER = r'uploaded_images\resized_images'
@@ -109,3 +111,5 @@ def process_image():
         return jsonify({"error": str(e)}), 500
 
 
+if __name__ == '__main__':
+    app.run()
