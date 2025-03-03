@@ -1,0 +1,7 @@
+transformers
+pillow
+tensorflow
+opencv-python
+matplotlib
+tf-keras
+flask 
