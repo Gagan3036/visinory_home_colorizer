@@ -5,3 +5,4 @@ opencv-python
 matplotlib
 tf-keras
 flask 
+gunicorn
