@@ -61,7 +61,7 @@ def download_and_load_model():
     model_name = 'deeplabv3_xception_ade20k_train'
     download_url = f'http://download.tensorflow.org/models/{model_name}_2018_05_29.tar.gz'
     model_dir = os.path.join(tempfile.gettempdir(), 'deeplab_model')
-    saved_model_path = os.path.join(r"D:\Documents\my_modules_and_servers\visinoryHomeFlaskServer\deeplab_model", 'saved_model')
+    saved_model_path = os.path.join(r"deeplab_model", 'saved_model')
 
     if os.path.exists(saved_model_path):
         print("Loading saved model...")
